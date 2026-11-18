@@ -15,6 +15,11 @@
                 <img src="logohack.webp" alt="Логотип сайта" class="me-2">
                 <span class="text-light">History</span>
             </a>
+            <?php if (isset($_COOKIE['User'])): ?>
+                <form action="logout.php" method="POST" class="d-flex">
+                    <button class="btn btn-outline-danger" type="submit">Logout</button>
+                </form>
+            <?php endif; ?>
         </div>
     </nav>
 
