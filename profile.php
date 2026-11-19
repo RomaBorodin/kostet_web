@@ -74,7 +74,7 @@ if (!isset($_COOKIE['User'])) {
 }
 
 require_once('db.php');
-$link = mysqli_connect('localhost', 'lab_user', '12345', 'lab_db');
+$link = mysqli_connect('db', 'lab_user', '12345', 'lab_db');
 
 if (isset($_POST['submit'])) {
     $title = $_POST['postTitle'];
